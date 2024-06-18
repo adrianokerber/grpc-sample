@@ -1,0 +1,12 @@
+﻿services:
+  grpcservice:
+    image: grpcservicesample
+    build:
+      context: .
+      dockerfile: GrpcServiceSample/Dockerfile
+
+  grpcclient:
+    image: grpcclientsample
+    build:
+      context: .
+      dockerfile: GrpcClientSample/Dockerfile
